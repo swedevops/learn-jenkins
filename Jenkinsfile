@@ -5,6 +5,11 @@ pipeline{
        label 'workstation'
      }
    }
+
+   options {
+          ansiColor('xterm')
+       }
+
   environment{
     SAMPLE_URL="example.com"
   }
