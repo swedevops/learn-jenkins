@@ -35,6 +35,12 @@ pipeline{
       }
     }
 
+   stage ('two'){
+   steps{
+    sh 'env'
+   }
+   }
+
   }
  post {
    always {
