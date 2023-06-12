@@ -1,6 +1,12 @@
 pipeline{
 
-   agent any
+   agent any{
+      node {
+
+      label 'workstation'
+
+      }
+   }
 
    stages{
 
@@ -14,6 +20,13 @@ pipeline{
 
    }
 
+  }
+
+  post {
+  always{
+
+  sh 'echo post CleanUp steps'
+}
   }
 
 }
