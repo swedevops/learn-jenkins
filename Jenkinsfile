@@ -21,12 +21,12 @@ pipeline{
   }
 
    stages{
-    stage('one') {
-   input {
-            message "Do You Approve?"
-             ok "Yes".
-              }
 
+    stage('one') {
+       input {
+            message "Do You Approve?"
+             ok "Yes"
+        }
      steps{
        sh 'echo hello world'
        sh 'echo hello universe'
