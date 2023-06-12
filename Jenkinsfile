@@ -4,7 +4,7 @@ pipeline{
 
    stages{
 
-   stages('one') {
+   stage('one') {
 
    steps{
 
