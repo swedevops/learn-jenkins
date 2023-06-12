@@ -36,6 +36,9 @@ pipeline{
     }
 
    stage ('two'){
+    when {
+         GIT_BRANCH == "orgin/test"
+        }
    steps{
     sh 'env'
    }
