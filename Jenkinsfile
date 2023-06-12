@@ -58,11 +58,11 @@
 
 pipeline{
  agent any
- stages{
+ stages {
     stage('parallel'){
      parallel {
 
-   stage('one'){
+   stage('one') {
    steps {
    sh 'echo one'
    }
@@ -79,5 +79,5 @@ pipeline{
        }
       }
     }
-    }
+
 
