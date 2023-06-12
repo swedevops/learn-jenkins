@@ -1,32 +1,24 @@
 pipeline{
 
-   agent any {
-      node {
-
-      label 'workstation'
-
-      }
+   agent {
+     node {
+       label 'workstation'
+     }
    }
 
    stages{
 
    stage('one') {
-
-   steps{
-
-    sh 'echo hello world'
-
-   }
-
-   }
+     steps{
+       sh 'echo hello world'
+      }
+    }
 
   }
-
-  post {
-  always{
-
-  sh 'echo post CleanUp steps'
-}
+ post {
+   always {
+     sh 'echo post CleanUp steps'
+    }
   }
 
 }
